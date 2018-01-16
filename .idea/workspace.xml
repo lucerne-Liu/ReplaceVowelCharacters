@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="06dab939-8862-434c-9862-62e7f899fd38" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/ReplaceVowelCharacter/com/tw/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/com/tw/Game.java" afterPath="$PROJECT_DIR$/src/com/tw/Game.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tw/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="28" column="59" lean-forward="false" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+            <state relative-caret-position="299">
+              <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -98,8 +96,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="366" />
-    <option name="y" value="103" />
+    <option name="x" value="202" />
+    <option name="y" value="118" />
     <option name="width" value="1378" />
     <option name="height" value="957" />
   </component>
@@ -354,7 +352,7 @@
       <updated>1516094872962</updated>
       <workItem from="1516094874588" duration="7000" />
       <workItem from="1516094941457" duration="1392000" />
-      <workItem from="1516096389899" duration="14741000" />
+      <workItem from="1516096389899" duration="15185000" />
     </task>
     <task id="LOCAL-00001" summary="test for 'input length between 0 - 10'">
       <created>1516100461617</created>
@@ -405,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516113231883</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactor">
+      <created>1516116448337</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1516116448337</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -441,10 +446,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16140000" />
+    <option name="totallyTimeSpent" value="16584000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="366" y="103" width="1378" height="957" extended-state="0" />
+    <frame x="202" y="118" width="1378" height="957" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -488,7 +493,8 @@
     <MESSAGE value="test for &quot;input 'she' return 'shmommy'&quot;(vowel over 30%)" />
     <MESSAGE value="test for &quot;input 'hear' return 'hmommyr'&quot;(only replace once)" />
     <MESSAGE value="test for &quot;input 'asss' return 'asss'&quot;(vowels &lt; 30% no replacement)" />
-    <option name="LAST_COMMIT_MESSAGE" value="test for &quot;input 'asss' return 'asss'&quot;(vowels &lt; 30% no replacement)" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -670,8 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tw/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="28" column="59" lean-forward="false" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+        <state relative-caret-position="299">
+          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding />
         </state>
       </provider>

@@ -9,16 +9,19 @@ public class Game {
         this.reader = reader;
         this.printer = printer;
     }
-    public String replace(String input){
+    public float checkVowelPercent(String input){
         String vowels = "aeiouAEIOU";
-        String regx = "[aeiouAEIOU]+";
         float vowelsCount = 0;
         for(int i = 0 ; i < input.length() ; i++){
             if (vowels.contains(input.substring(i,i+1))){
                 vowelsCount++;
             }
         }
-        if (vowelsCount/input.length() > 0.3){
+        return vowelsCount/input.length();
+    }
+    public String replace(String input){
+        String regx = "[aeiouAEIOU]+";
+        if ( checkVowelPercent(input) > 0.3 ){
             return input.replaceAll(regx, REPLACE_TEXT);
         }else{
             return  input;
