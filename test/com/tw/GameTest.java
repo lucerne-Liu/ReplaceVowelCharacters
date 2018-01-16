@@ -12,4 +12,9 @@ public class GameTest {
     public void shouldReturnTheSameWhenHasNoneVowels(){
         assertEquals("hmm", game.replace("hmm"));
     }
+    //输入一个元音，返回mommy
+    @Test
+    public void shouldReturnMommyWhenInputSingleVowel(){
+        assertEquals("mommy",game.replace("e") );
+    }
 }
