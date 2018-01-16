@@ -22,4 +22,9 @@ public class GameTest {
     public void shouldRepleceVowelWhenHasVowelsOver30Percent(){
         assertEquals("shmommy", game.replace("she"));
     }
+    //输入一个元音超过30%，并存在连续元音字符，预期连续的元音字符只被替换一次
+    @Test
+    public void shouldReplaceOnceWhenhasContinuousVowels(){
+        assertEquals("hmommyr",game.replace("hear") );
+    }
 }

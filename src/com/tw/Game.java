@@ -9,7 +9,7 @@ public class Game {
 
     public String replace(String input){
         String vowels = "aeiou";
-        String regx = "[aeiou]";
+        String regx = "[aeiouAEIOU]+";
         return input.replaceAll(regx, REPLACE_TEXT);
     }
 }
