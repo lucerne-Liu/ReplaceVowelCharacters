@@ -2,6 +2,7 @@ package com.tw;
 
 import org.junit.Before;
 import org.junit.Test;
+import sun.reflect.annotation.ExceptionProxy;
 
 import java.io.ByteArrayInputStream;
 import java.lang.reflect.Field;
@@ -27,9 +28,14 @@ public class StringReaderTest {
         assertEquals("asss", reader.read());
     }
     //length between 0-10
-    @Test
-    public void shouldThrowExceptionWhenLengthLessThan0() throws Exception{
-
+    @Test(expected = Exception.class)
+    public void shouldThrowExceptionWhenLengthGreaterThan10() throws Exception{
+        setInputStream("jjjjjjjjjjj");
+        reader.read();
     }
-
+    @Test(expected = Exception.class)
+    public void shouldThrowExceptionWhenNonLetterInput() throws Exception{
+        setInputStream("1234");
+        reader.read();
+    }
 }
