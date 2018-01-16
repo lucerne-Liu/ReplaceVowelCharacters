@@ -9,7 +9,9 @@ public class StringReader {
 
     public String read() throws Exception {
         String inputNumber = scanner.next();
-        return inputNumber;
+        if (inputNumber.length() <= 10 && inputNumber.length() >= 0) {
+            return inputNumber;
+        }
         throw new Exception("Invalid Input");
     }
 }

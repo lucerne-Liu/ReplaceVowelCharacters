@@ -1,5 +1,6 @@
 package com.tw;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -9,7 +10,11 @@ import java.util.Scanner;
 import static org.junit.Assert.*;
 
 public class StringReaderTest {
-    private StringReader = new StringReader();
+    private StringReader reader;
+    @Before
+    public final void before(){
+        reader = new StringReader();
+    }
     private void setInputStream(String input) throws NoSuchFieldException, IllegalAccessException {
         Field scannerField = reader.getClass().getDeclaredField("scanner");
         scannerField.setAccessible(true);
@@ -17,9 +22,14 @@ public class StringReaderTest {
         scannerField.set(reader, scannerWithMockedStream);
     }
     @Test
-    public void shouldReadString(){
+    public void shouldReadString() throws Exception{
         setInputStream("asss");
-        assertEquals("asss", StringReader.read());
+        assertEquals("asss", reader.read());
+    }
+    //length between 0-10
+    @Test
+    public void shouldThrowExceptionWhenLengthLessThan0() throws Exception{
+
     }
 
 }
