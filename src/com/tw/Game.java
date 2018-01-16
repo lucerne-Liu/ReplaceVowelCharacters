@@ -1,12 +1,14 @@
 package com.tw;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class Game {
     private static final String REPLACE_TEXT = "mommy";
     private StringReader reader;
-
+    private Printer printer;
+    public Game(){ }
+    public Game(StringReader reader,Printer printer){
+        this.reader = reader;
+        this.printer = printer;
+    }
     public String replace(String input){
         String vowels = "aeiouAEIOU";
         String regx = "[aeiouAEIOU]+";
@@ -22,5 +24,11 @@ public class Game {
             return  input;
         }
 
+    }
+    public void start() throws Exception{
+        printer.print("Please input a string of letters(a-zA-Z):");
+        String result = replace(reader.read());
+        printer.print("Result After replacing:");
+        printer.print(result);
     }
 }
