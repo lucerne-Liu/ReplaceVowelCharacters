@@ -3,6 +3,8 @@ package com.tw;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	 Game game = new Game();
+	 String out = game.replace("hmma");
+	 System.out.println(out);
     }
 }

@@ -17,4 +17,9 @@ public class GameTest {
     public void shouldReturnMommyWhenInputSingleVowel(){
         assertEquals("mommy",game.replace("e") );
     }
+    //输入一个元音超过30%字符串，预期元音被替换
+    @Test
+    public void shouldRepleceVowelWhenHasVowelsOver30Percent(){
+        assertEquals("shmommy", game.replace("she"));
+    }
 }
