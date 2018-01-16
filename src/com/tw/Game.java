@@ -8,8 +8,19 @@ public class Game {
     private StringReader reader;
 
     public String replace(String input){
-        String vowels = "aeiou";
+        String vowels = "aeiouAEIOU";
         String regx = "[aeiouAEIOU]+";
-        return input.replaceAll(regx, REPLACE_TEXT);
+        float vowelsCount = 0;
+        for(int i = 0 ; i < input.length() ; i++){
+            if (vowels.contains(input.substring(i,i+1))){
+                vowelsCount++;
+            }
+        }
+        if (vowelsCount/input.length() > 0.3){
+            return input.replaceAll(regx, REPLACE_TEXT);
+        }else{
+            return  input;
+        }
+
     }
 }

@@ -27,4 +27,9 @@ public class GameTest {
     public void shouldReplaceOnceWhenhasContinuousVowels(){
         assertEquals("hmommyr",game.replace("hear") );
     }
+    //输入元音不超过30%，返回原字符串
+    @Test
+    public void shouldReturnTheSameWhenVowelsLessThan30Percent(){
+        assertEquals("asss", game.replace("asss"));
+    }
 }
