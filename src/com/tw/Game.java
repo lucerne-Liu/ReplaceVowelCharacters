@@ -1,6 +1,7 @@
 package com.tw;
 
 public class Game {
+    private static final String CHCEK_LIST = "aeiouAEIOU";
     private static final String REPLACE_TEXT = "mommy";
     private StringReader reader;
     private Printer printer;
@@ -9,23 +10,21 @@ public class Game {
         this.reader = reader;
         this.printer = printer;
     }
-    public float checkVowelPercent(String input){
-        String vowels = "aeiouAEIOU";
+    public double vowelsCount(String input){
         float vowelsCount = 0;
         for(int i = 0 ; i < input.length() ; i++){
-            if (vowels.contains(input.substring(i,i+1))){
+            if (CHCEK_LIST.contains(input.substring(i,i+1))){
                 vowelsCount++;
             }
         }
-        return vowelsCount/input.length();
+        return vowelsCount;
+    }
+    public double checkVowelPercent(String input){
+        return vowelsCount(input)/input.length();
     }
     public String replace(String input){
         String regx = "[aeiouAEIOU]+";
-        if ( checkVowelPercent(input) > 0.3 ){
-            return input.replaceAll(regx, REPLACE_TEXT);
-        }else{
-            return  input;
-        }
+        return checkVowelPercent(input) > 0.3 ? input.replaceAll(regx, REPLACE_TEXT) : input;
 
     }
     public void start() throws Exception{
